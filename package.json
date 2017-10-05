@@ -1,0 +1,19 @@
+{
+  "name": "workshop-robotica",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "ssh://git@bitbucket.escm.co:7999/~apivetta/workshop-robotica.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "johnny-five": "^0.11.6",
+    "keypress": "^0.2.1"
+  }
+}
