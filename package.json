@@ -1,19 +1,26 @@
 {
-  "name": "workshop-robotica",
+  "name": "Workshop RoboticaJS",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
+  "description": "Workshop orientado a la introduccion de los participantes a la robotica y domotica utilizando componentes simples de bajo presupuesto y javascript como lenguaje de codeo.",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "flash": "interchange install --interactive"
   },
   "repository": {
     "type": "git",
     "url": "ssh://git@bitbucket.escm.co:7999/~apivetta/workshop-robotica.git"
   },
-  "author": "",
+  "author": "Marcos Tomatti <mtomatti@elementum.com>",
+  "contributors": [
+    "Agustin Pivetta <apivetta@elementum.com>"
+  ],
   "license": "MIT",
   "dependencies": {
+    "etherport": "^0.2.0",
     "johnny-five": "^0.11.6",
-    "keypress": "^0.2.1"
+    "keypress": "^0.2.1",
+    "nodebots-interchange": "^1.1.6",
+    "temporal": "^0.6.0"
   }
 }
