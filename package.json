@@ -1,5 +1,5 @@
 {
-  "name": "Workshop RoboticaJS",
+  "name": "workshop-roboticajs",
   "version": "1.0.0",
   "main": "index.js",
   "description": "Workshop orientado a la introduccion de los participantes a la robotica y domotica utilizando componentes simples de bajo presupuesto y javascript como lenguaje de codeo.",
