@@ -1,3 +1,10 @@
+## Ejemplo Boton
+
+### Cableado
+![cableado boton](../../assets/boton.png)
+
+### Codigo
+```javascript
 const five = require('johnny-five');
 
 let board = new five.Board();
@@ -5,7 +12,7 @@ let board = new five.Board();
 board.on('ready', () => {
   const button = new five.Button({
     pin: 2,
-    invert: true
+    invert: true // algunos botones vienen con el modo invertido.
   });
 
   button.on('hold', function onHold() {
@@ -20,3 +27,7 @@ board.on('ready', () => {
     console.log('Button released');
   });
 });
+```
+
+### Referencia de la API
+[Botones](http://johnny-five.io/api/button/)

@@ -1,11 +1,19 @@
+## Ejemplo Boton
+
+### Cableado
+![cableado i2c backpack](../../assets/i2c.png)
+
+
+### Codigo
+```javascript
 const five = require('johnny-five');
 
 let board = new five.Board();
 
 board.on('ready', () => {
   const button = new five.Button({
-    pin: 2,
-    invert: true
+    pin: 6,
+    invert: true // algunos botones vienen con el modo invertido.
   });
 
   button.on('hold', function onHold() {
@@ -20,3 +28,6 @@ board.on('ready', () => {
     console.log('Button released');
   });
 });
+```
+
+### Referencia de la API

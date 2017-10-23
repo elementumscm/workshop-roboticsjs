@@ -1,6 +1,8 @@
-## Two colors LED
+## Ejemplo LED de 2 colores
 
-
+### Cableado
+![Led de 2 colores](../../assets/two_color_led_bb.png)
+### Codigo
 ```javascript
 const five = require('johnny-five');
 
@@ -28,4 +30,5 @@ board.on('ready', () => {
 });
 ```
 
-<img src="./two_color_led_bb.png">
+### Referencia de la API
+[Leds](http://johnny-five.io/api/led)

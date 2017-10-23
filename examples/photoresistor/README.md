@@ -1,3 +1,10 @@
+## Ejemplo Fotorresistencia
+
+### Cableado
+![cableado fotorresitencia](../../assets/fotorresistencia.png)
+
+### Codigo
+```javascript
 const five = require('johnny-five');
 
 const board = new five.Board();
@@ -15,8 +22,8 @@ board.on('ready', () => {
   photoresistor.on('data', function onData() {
     console.log(this.value);
   });
-
-  board.repl.inject({
-    pot: photoresistor
-  });
 });
+```
+
+### Referencia de la API
+[Sensores](http://johnny-five.io/api/sensor/)

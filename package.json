@@ -5,7 +5,8 @@
   "description": "Workshop orientado a la introduccion de los participantes a la robotica y domotica utilizando componentes simples de bajo presupuesto y javascript como lenguaje de codeo.",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "flash": "interchange install --interactive"
+    "flash": "interchange install --interactive",
+    "start": "node examples/led/led"
   },
   "repository": {
     "type": "git",
