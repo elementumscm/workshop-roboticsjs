@@ -6,7 +6,7 @@
 Nota: como lo explicado en los ejemplos de [sensores](../sensors), un termistor puede tener un cableado distinto o requerir de una resistencia adicional. 
 
 
-### Codigo
+### Código
 ```javascript
 const five = require('johnny-five');
 

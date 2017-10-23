@@ -3,7 +3,7 @@
 ### Cableado
 ![cableado Termometro](../../assets/temperature-ds18b20.png)
 
-### Codigo
+### Código
 ```javascript
 const five = require('johnny-five');
 

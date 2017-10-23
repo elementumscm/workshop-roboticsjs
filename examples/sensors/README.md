@@ -3,7 +3,7 @@
 ### Cableado
 El cableado de sensores _genéricos_ varía según el dispositivo en si. Algunos operan de forma similar a una foto o termorresistencia, otros tienen entradas de 5v, GND y una salida de señal digital o análoga. La mayoría, a su vez, pueden requerir de resistencias de valores especificos para operar correctamente o proteger el arduino de potenciales cortocircuitos. Lo único standard en este caso es el código que utilizaremos que es prácticamente el mismo para todos los casos.   
 
-### Codigo para sensor *digital*
+### Código para sensor *digital*
 ```javascript
 const five = require('johnny-five');
 
@@ -18,7 +18,7 @@ board.on('ready', () => {
 });
 ```
 
-### Codigo para sensor *analógico*
+### Código para sensor *analógico*
 ```Javascript
 const five = require('johnny-five');
 

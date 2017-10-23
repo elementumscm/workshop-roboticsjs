@@ -2,7 +2,7 @@
 
 ### Cableado
 ![Led de 2 colores](../../assets/two_color_led_bb.png)
-### Codigo
+### Código
 ```javascript
 const five = require('johnny-five');
 

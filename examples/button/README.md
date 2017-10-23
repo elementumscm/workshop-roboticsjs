@@ -3,7 +3,7 @@
 ### Cableado
 ![cableado boton](../../assets/boton.png)
 
-### Codigo
+### Código
 ```javascript
 const five = require('johnny-five');
 

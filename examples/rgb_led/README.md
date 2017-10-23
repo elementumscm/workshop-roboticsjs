@@ -2,7 +2,7 @@
 
 ### Cableado
 ![Led RGB]()
-### Codigo
+### Código
 ```javascript
 const five = require('johnny-five');
 

@@ -3,7 +3,7 @@
 ### Cableado
 No se necesita cableado. La gran mayoria, si no todos, los Arduinos vienen con un led integrado en el pin D13.
 
-### Codigo
+### Código
 ```javascript
 const five = require('johnny-five');
 

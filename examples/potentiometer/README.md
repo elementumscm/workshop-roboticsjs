@@ -3,7 +3,7 @@
 ### Cableado
 ![cableado Sensor de movimiento](../../assets/potentiometer.png)
 
-### Codigo
+### Código
 ```javascript
 const five = require('johnny-five');
 

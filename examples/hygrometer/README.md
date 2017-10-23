@@ -5,7 +5,7 @@ Este ejemplo usa [backpacking](../i2c_backpack) para poder acceder a un disposit
 ### Cableado
 ![cableado boton](../../assets/multi-DHT11_I2C_NANO_BACKPACK.png)
 
-### Codigo JS
+### Código JS
 ```javascript
 const five = require('johnny-five');
 
@@ -24,7 +24,7 @@ board.on('ready', () => {
 });
 ```
 
-### Codigo Backpack (Arduino)
+### Código Backpack (Arduino)
 ```C
 #include <Wire.h>
 #include "DHT.h"

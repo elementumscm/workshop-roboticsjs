@@ -3,7 +3,7 @@
 ### Cableado
 ![cableado Sensor de movimiento](../../assets/piezo.png)
 
-### Codigo
+### Código
 ```javascript
 const five = require('johnny-five');
 const board = new five.Board();

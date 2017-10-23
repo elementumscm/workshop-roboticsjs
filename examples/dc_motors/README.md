@@ -3,7 +3,7 @@
 ### Cableado
 ![Cableado motores continuos](../../assets/boton.png)
 
-### Codigo
+### Código
 ```javascript
 const five = require('johnny-five');
 

@@ -3,7 +3,7 @@
 ### Cableado
 ![Cableado Servomotor](../../assets/servo.png)
 
-### Codigo
+### Código
 ```javascript
 const five = require('johnny-five');
 

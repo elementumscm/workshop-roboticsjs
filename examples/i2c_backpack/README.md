@@ -4,7 +4,7 @@
 ![cableado i2c backpack](../../assets/i2c.png)
 
 
-### Codigo
+### Código
 ```javascript
 const five = require('johnny-five');
 

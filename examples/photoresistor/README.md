@@ -3,7 +3,7 @@
 ### Cableado
 ![cableado fotorresitencia](../../assets/fotorresistencia.png)
 
-### Codigo
+### Código
 ```javascript
 const five = require('johnny-five');
 
