@@ -40,6 +40,12 @@ En la sección de [firmwares](./firmwares) encontrarán detalles de como hacerlo
 
 ### Kits
 Para el workshop tenemos preparados algunos kits con diferentes desafíos:
+- [Kit 1](./kit1)
+- [Kit 2](./kit2)
+- [Kit 3](./kit3)
+- [Simon x3](simon_x3)
+- [Simon x4](simon_x4)
+- 
 
 
 ### Ejemplos de Codigo

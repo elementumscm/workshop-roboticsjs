@@ -1,20 +1,26 @@
 # RoboticaJS
 
-## Hexapod
+## hexapod
 
-### BOT Configuration
+### Configuración del Robot
 
-- Edit & run `$ node hexapod/test` to figure out which servo is connected to which board and pin and if its facing in the right direction.
-- Keep notes of that, you will need it.
-- With the gathered data set up the servos for each leg in `robot.js`.
-- For the animations you need to find the highest and lowest point of each articulation and the middle frame will be the resting point. **Make sure they don't hit with each other at any point of the anymation**  
-- Once you have the basic animations, you need to wire it with the joystick events in the index.js file. 
-### Running and debugging
+- Editando y ejecutando `$ node hexapod/test` se puede establecer que servo esta conectado a que pin, y si apuntan o no en la dirección correcta.
+- El paso anterior es el mas importante, hay que llevar bien las anotaciones.
+- Con la información recaudada se debe completar la configuracion correcta en el archivo `robot.js`.
+- Para la animación de los movimientos, se debe encontrar los puntos mas altos y bajos de movimiento en cada articulación (sin colisiones), esto nos dará los ángulos para las posiciones de inicio, medio y fin de cada extremo. **IMPORTANTE: Asegurarse que que las piernas no se golpeen en ningún punto de la animación**
+- Una vez establecido el "grueso" de la animación se pueden realizar ajustes pequeños en cada paso para lograr movimientos mas naturales y fluidos.   
 
-1. Run `node hexapod` to run the bot with its animations.
 
-2. The bot script provides a REPL to interact with the `hexa` object, you just need to type something like:
-    - `$ hexa.walk()`
+### Ejecutando y debugueando
+
+1. Ejecutando `node hexapod` se puede probar el robots con las animaciones.
+
+2. El script nos expone un objeto `hexa` via [REPL](../examples/repl) para interactuar con robot, solo necesitamos tipear algo como:
+    - `$ hexa.walk(''|'rev')`
+    - `$ hexa.turn(''|'right')`
+    - `$ hexa.stand()`
+    - `$ hexa.stop()`
+3. Si todo está funcionando bien, se pueden probar las animaciones/acciones creadas con el joystick. 
 
 ## License
 Licensed under the MIT license.
