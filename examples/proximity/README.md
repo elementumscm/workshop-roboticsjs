@@ -1,7 +1,7 @@
 ## Ejemplo Boton
 
 ### Cableado
-![cableado boton](../../assets/proximity-hcsr04.png)
+![cableado Proximidad](../../assets/proximity-hcsr04.png)
 
 ### Firmware
 Este ejemplo requiere de una versión especial de Firmata llamada PingFirmata, y debe ser cargada en el Arduino para que el código funcione. 

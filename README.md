@@ -25,7 +25,7 @@ _Author [Marcos Tomatti](mailto:mtomatti@elementum.com)_
 
     - Windows, es recomendable correr la consola como administrador.
     - Mac OSX, suele no reconocer los USB de los arduinos. Para idenitifcar el modelo y bajar los drivers hay que correr:
-        - `$ brew install lsusb`
+        - `$ brew update && brew tap jlhonora/lsusb && brew install lsusb`
         - Ejecutandp `$ lsusb` con y sin el arduino conectado podremos identificar que ID de fabricante y de dispositivo tiene el microcontrolador. Ese id nos permitirá buscar y encontrar el driver adecuado para nuestro dispositivo.
           
           ![lsusb](./assets/lsusb_device_id.png)
