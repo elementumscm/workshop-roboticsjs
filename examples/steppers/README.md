@@ -1,32 +1,48 @@
-## Ejemplo Servomotores
+## Ejemplo Motores Paso a Paso
 
 ### Cableado
-![Cableado Servomotor](../../assets/servo.png)
+![Cableado Motor paso a paso](../../assets/stepper-driver.png)
 
 ### Código
 ```javascript
 const five = require('johnny-five');
-
 const board = new five.Board();
 
 board.on('ready', function onReady() {
-  const servo = new five.Servo({
-    pin: 3,
-    range: [0, 180],
-    fps: 100,
-    startAt: 90
+
+  /**
+   * In order to use the Stepper class, your board must be flashed with
+   * either of the following:
+   *
+   * - AdvancedFirmata https://github.com/soundanalogous/AdvancedFirmata
+   * - ConfigurableFirmata https://github.com/firmata/arduino/releases/tag/v2.6.2
+   *
+   */
+
+  const stepper = new five.Stepper({
+    type: five.Stepper.TYPE.DRIVER,
+    stepsPerRev: 200,
+    pins: {
+      step: 11,
+      dir: 13
+    }
   });
 
-  servo.center();
+  // Make 10 full revolutions counter-clockwise at 180 rpm with acceleration and deceleration
+  stepper.rpm(180).ccw().accel(1600).decel(1600).step(2000, function step() {
 
-  setTimeout(() => {
-    servo.sweep();
-  }, 1000);
+    console.log('Done moving CCW');
 
-  setTimeout(() => {
-    servo.center();
-  }, 5000);
+    // once first movement is done, make 10 revolutions clockwise at previously
+    //      defined speed, accel, and decel by passing an object into stepper.step
 
+    stepper.step({
+      steps: 2000,
+      direction: five.Stepper.DIRECTION.CW
+    }, function cb() {
+      console.log('Done moving CW');
+    });
+  });
 });
 ```
 
