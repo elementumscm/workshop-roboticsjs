@@ -43,9 +43,15 @@ Para el workshop tenemos preparados algunos kits con diferentes desafíos:
 - [Kit 1](./kit1)
 - [Kit 2](./kit2)
 - [Kit 3](./kit3)
-- [Simon x3](simon_x3)
-- [Simon x4](simon_x4)
-- 
+- [Kit 4](./kit4)
+- [Kit 5](./kit5)
+- [Simon x3](./simon_x3)
+- [Simon x4](./simon_x4)
+- [Robot Arm](./robot-arm)
+- ~~[Step by Step](./step-by-step)~~
+- [SpaceBucket](./spacebucket)
+- [Quadpod](./quadpod)
+- [Hexapod](./hexapod)
 
 
 ### Ejemplos de Codigo
@@ -69,6 +75,9 @@ Otros ejemplos:
 - [Backpack  I2C](./examples/i2c_backpack)
 - [Keypress](./examples/keypress)
 - [REPL](./examples/repl)
+
+### Presentacion
+Los slides del workshop estan disponibles [aqui](https://docs.google.com/presentation/d/1eZ7Vt9LG6fp64gvVSviCgytMsvBdvqT8KcOFrs97kFM/edit?usp=sharing).
 
 ## License
 Licensed under the MIT license.
