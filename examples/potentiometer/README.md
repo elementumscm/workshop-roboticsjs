@@ -1,7 +1,7 @@
-## Ejemplo Boton
+## Ejemplo Potenciometro
 
 ### Cableado
-![cableado Sensor de movimiento](../../assets/potentiometer.png)
+![cableado potenciometro](../../assets/potentiometer.png)
 
 ### Código
 ```javascript
@@ -23,4 +23,4 @@ board.on('ready', () => {
 ```
 
 ### Referencia de la API
-[Botones](http://johnny-five.io/api/motion)
+[Sensor](http://johnny-five.io/api/sensor)

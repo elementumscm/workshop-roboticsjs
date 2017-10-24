@@ -1,4 +1,4 @@
-## Ejemplo Boton
+## Ejemplo Proximidad
 
 ### Cableado
 ![cableado Proximidad](../../assets/proximity-hcsr04.png)
@@ -33,4 +33,4 @@ board.on('ready', function onReady() {
 ```
 
 ### Referencia de la API
-[Botones](http://johnny-five.io/api/proximity/)
+[Proximidad](http://johnny-five.io/api/proximity)

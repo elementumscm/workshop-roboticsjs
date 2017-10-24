@@ -1,4 +1,4 @@
-## Ejemplo Boton
+## Ejemplo Sensor de Movimiento
 
 ### Cableado
 ![cableado Sensor de movimiento](../../assets/movement.png)
@@ -40,4 +40,4 @@ board.on('ready', function onReady() {
 ```
 
 ### Referencia de la API
-[Botones](http://johnny-five.io/api/motion)
+[Motion](http://johnny-five.io/api/motion)

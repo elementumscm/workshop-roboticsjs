@@ -1,7 +1,7 @@
-## Ejemplo Boton
+## Ejemplo Termistor
 
 ### Cableado
-![cableado termistor](../../assets/fotorresistencia.png)
+![cableado termistor](../../assets/thermoresistor.png)
     
 Nota: como lo explicado en los ejemplos de [sensores](../sensors), un termistor puede tener un cableado distinto o requerir de una resistencia adicional. 
 
@@ -17,7 +17,7 @@ function voltToTemp(resistance) {
     let tempC;
     const thermistorOhm = 10000,
         nominalTemp = 25,
-        betaCoef = 3435,
+        betaCoef = 3435,  // este valor suele ser especifico para el sensor, usualmente relacionado con la marca o fabricante.
         resistorOhm = 10000;
 
     resistance = 1023 / resistance - 1;
@@ -61,4 +61,4 @@ board.on('ready', () => {
 ```
 
 ### Referencia de la API
-[Botones](http://johnny-five.io/api/sensor)
+[Sensor](http://johnny-five.io/api/sensor)

@@ -46,4 +46,4 @@ board.on('ready', function onReady() {
 ```
 
 ### Referencia de la API
-[Botones](http://johnny-five.io/api/piezo)
+[Piezo](http://johnny-five.io/api/piezo)

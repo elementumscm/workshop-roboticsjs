@@ -1,4 +1,5 @@
-## Ejemplo Boton
+## Ejemplo Termometro
+Este ejemplo usa la version ConfigurableFirmata dentro del Arduino.
 
 ### Cableado
 ![cableado Termometro](../../assets/temperature-ds18b20.png)
@@ -28,5 +29,5 @@ board.on('ready', () => {
 ```
 
 ### Referencia de la API
-[Botones](http://johnny-five.io/api/sensor)
-[Botones](http://johnny-five.io/api/thermometer)
+[Sensor](http://johnny-five.io/api/sensor)
+[Thermometer](http://johnny-five.io/api/thermometer)

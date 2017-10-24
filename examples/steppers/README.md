@@ -31,4 +31,5 @@ board.on('ready', function onReady() {
 ```
 
 ### Referencia de la API
-[Servo](http://johnny-five.io/api/servo)
+[Motor](http://johnny-five.io/api/motor)
+[Stepper](http://johnny-five.io/api/stepper)

@@ -1,7 +1,7 @@
 ## Ejemplo LED RGB
 
 ### Cableado
-![Led RGB]()
+![Led RGB](../../assets/LED_RGB.png)
 ### Código
 ```javascript
 const five = require('johnny-five');

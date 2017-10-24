@@ -1,7 +1,7 @@
 ## Ejemplo Backpacking con I2C
 
 ### Cableado
-![cableado i2c backpack](../../assets/i2c.png)
+![cableado i2c backpack](../../assets/i2c_backpacking.png)
 
 
 ### Código JS
@@ -34,7 +34,7 @@ board.on("ready", () => {
 #include <Wire.h>
 
 // Address Pins
-#define LED_PIN 7
+#define LED_PIN 13
 
 // I2C Defaults
 #define I2C_DEFAULT_ADDRESS 0x0A // esta es la direccion con la que identificamos cada dispositivo. 
@@ -88,3 +88,7 @@ void receiveEvent (int received)
   }
 }
 ```
+
+
+### Referencia de la API
+[Board](http://johnny-five.io/api/board)

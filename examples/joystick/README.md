@@ -1,33 +1,56 @@
-## Ejemplo Boton
+## Ejemplo WiiChuck
+Este ejemplo usa un componente de muy bajo costo (WiiChuck) para conectar un Nunchuck de Wii a un Arduino.
 
 ### Cableado
-![cableado boton](../../assets/boton.png)
+![cableado wii nunchuck](../../assets/wiichuck.png)
 
 
 ### Código
 ```javascript
 const five = require('johnny-five');
 
-let board = new five.Board();
+const board = new five.Board();
 
-board.on('ready', () => {
-  const button = new five.Button({
-    pin: 6,
-    invert: true // algunos botones vienen con el modo invertido.
+board.on('ready', function() {
+  
+  // Create a new `nunchuk` hardware instance.
+  const nunchuk = new five.Wii.Nunchuk({
+    freq: 50
+  });
+  
+  new five.Pin("A2").low(); // Ground
+  new five.Pin("A3").high(); // 5v
+  
+  nunchuk.joystick.on('change', function(event) {
+    console.log(
+      'joystick ' + event.axis,
+      event.target[event.axis],
+      event.axis, event.direction
+    );
+  });
+  
+  nunchuk.accelerometer.on('change', function(event) {
+    console.log(
+      'accelerometer ' + event.axis,
+      event.target[event.axis],
+      event.axis, event.direction
+    );
   });
 
-  button.on('hold', function onHold() {
-    console.log('Button held');
-  });
+  ['down', 'up', 'hold'].forEach(function(type) {
+    nunchuk.on(type, function(event) {
+      console.log(
+        event.target.which + ' is ' + type,
 
-  button.on('press', function onPress() {
-    console.log('Button pressed');
-  });
-
-  button.on('release', function onRelease() {
-    console.log('Button released');
+        {
+          isUp: event.target.isUp,
+          isDown: event.target.isDown
+        }
+      );
+    });
   });
 });
+
 ```
 
 ### Referencia de la API
