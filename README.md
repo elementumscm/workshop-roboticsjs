@@ -12,16 +12,19 @@ _Author [Marcos Tomatti](mailto:mtomatti@elementum.com)_
 
 ### Instalación
 
-1. Para instalar las dependencias del proyecto ejecutar:
+1. Colnar este repositorio:
+   `$ git clone git@github.com:elementumscm/workshop-roboticsjs.git`
+
+2. Para instalar las dependencias del proyecto ejecutar:
    
    `$ npm install`
    
-2. Según los diferentes sistemas operativos, podríamos encontrarnos con alguno de los siguientes problemas comunes:
+3. Según los diferentes sistemas operativos, podríamos encontrarnos con alguno de los siguientes problemas comunes:
     - Linux, sin permisos para leer/ecribir el puerto USB:
         - `$ sudo usermod -a -G dialout <username>`
         - `$ sudo chmod a+rw /dev/ttyACM0`
 
-        Where &lt;username&gt; is your login  user name in linux, /dev/ttyACM0 is the detected device of your Arduino board, the name may actually change depending on the board.
+        Donde &lt;username&gt; es el nombre de nuestro usuario en linux, /dev/ttyACM0 es el puerto de nuestro Arduino, el ID del dispositivo puede cambiar según la marca y modelo del board.
 
     - Windows, es recomendable correr la consola como administrador.
     - Mac OSX, suele no reconocer los USB de los arduinos. Para idenitifcar el modelo y bajar los drivers hay que correr:
@@ -30,7 +33,7 @@ _Author [Marcos Tomatti](mailto:mtomatti@elementum.com)_
           
           ![lsusb](./assets/lsusb_device_id.png)
 
-3. Si todo salió bien, ya podemos probar nuestro arduino con un simple "hola mundo":
+4. Si todo salió bien, ya podemos probar nuestro arduino con un simple "hola mundo":
     `$ npm start`
 
 ### Firmware
