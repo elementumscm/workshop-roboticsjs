@@ -15,7 +15,7 @@ Instalar firmata en un arduino es extremadamente simple usando [nodebots-interch
 En ambos casos se deben seguir los pasos y seleccionar las opciones correctas para cada dispositivo. 
 
 
-### Flasheand un NodeMCU, ESP8266 o similar. 
+### Flasheando un NodeMCU, ESP8266 o similar. 
 Para esto deberemos tener instalada la IDE de Arduino (1.6.4 o posterior).
 
 1. Abrir la IDE de Arduino e ir a **File > Preferences** 

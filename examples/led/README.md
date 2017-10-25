@@ -1,7 +1,9 @@
 ## Ejemplo LED
 
 ### Cableado
-No se necesita cableado. La gran mayoria, si no todos, los Arduinos vienen con un led integrado en el pin D13.
+![Cableado Led](../../assets/led.png)
+
+NOTA: Para el ejemplo inicial de "hola mundo" no se necesita cableado. La gran mayoria, si no todos, los Arduinos vienen con un led integrado en el pin D13.
 
 ### Código
 ```javascript

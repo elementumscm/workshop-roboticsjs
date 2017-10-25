@@ -34,7 +34,7 @@ _Author [Marcos Tomatti](mailto:mtomatti@elementum.com)_
     `$ npm start`
 
 ### Firmware
-Cuando tenemos un arduino nuevo, o debemos usar una versión especial de firmata para conectar a nuestros dispositivos, deberemos _flashealo_.
+Cuando tenemos un arduino nuevo, o debemos usar una versión especial de firmata para conectar a nuestros dispositivos, deberemos _flashearlo_.
 
 En la sección de [firmwares](./firmwares) encontrarán detalles de como hacerlo.
 
@@ -59,9 +59,9 @@ Para el workshop tenemos preparados algunos kits con diferentes desafíos:
 - [Fotoresistencia](./examples/photoresistor)
 - [Higrómetro](./examples/hygrometer)
 - [Leds](./examples/led)
-- *[Leds RGB](./examples/rgb_led)
+- [Leds RGB](./examples/rgb_led)
 - [Leds de 2 colores](./examples/two_color_leds)
-- *[Motores continuos](examples/dc_motors/)
+- [Motores continuos](examples/dc_motors/)
 - [Servomotores](./examples/servo_motors)
 - *[Motores paso a paso](./examples/steppers)
 - [Piezo / Sonido](./examples/piezo)
@@ -75,9 +75,6 @@ Otros ejemplos:
 - [Backpack  I2C](./examples/i2c_backpack)
 - [Keypress](./examples/keypress)
 - [REPL](./examples/repl)
-
-### Presentacion
-Los slides del workshop estan disponibles [aqui](https://docs.google.com/presentation/d/1eZ7Vt9LG6fp64gvVSviCgytMsvBdvqT8KcOFrs97kFM/edit?usp=sharing).
 
 ## License
 Licensed under the MIT license.
