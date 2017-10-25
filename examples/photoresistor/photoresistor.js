@@ -4,7 +4,7 @@ const board = new five.Board();
 
 board.on('ready', () => {
   const photoresistor = new five.Sensor({
-    pin: 'A0',
+    pin: 'A2',
     freq: 250
   });
 

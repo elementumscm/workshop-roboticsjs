@@ -4,7 +4,7 @@ let board = new five.Board();
 
 board.on('ready', () => {
   const button = new five.Button({
-    pin: 6,
+    pin: 2,
     invert: true
   });
 

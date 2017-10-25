@@ -2,27 +2,30 @@
 
 ## Firmata
 
-### Flashing into an Arduino
-Installing firmata in an arduino is extremely simple using [nodebots-interchage](https://github.com/johnny-five-io/nodebots-interchange/).
+### Flasheando un Arduino
+Instalar firmata en un arduino es extremadamente simple usando [nodebots-interchage](https://github.com/johnny-five-io/nodebots-interchange/). 
 
-##### flashing from inside our project:
+##### desde nuestro proyecto:
     $ npm run flash 
 
-##### flashing outside from our project:
+##### desde otro lugar:
     $ npm install nodebots-interchange -g
     $ interchange install --interactive
     
-in both cases you need to select the right options for your device. 
+En ambos casos se deben seguir los pasos y seleccionar las opciones correctas para cada dispositivo. 
 
 
-### Flashing into an NodeMCU, ESP8266 or similar. 
-For this you will need the Arduino IDE installed (1.6.4 or later).
+### Flasheando un NodeMCU, ESP8266 o similar. 
+Para esto deberemos tener instalada la IDE de Arduino (1.6.4 o posterior).
 
-1. Open the Arduino IDE and go to **File > Preferences** 
-2. Near to the bottom you will find an a text box called "Additional Board Manager URLs". there paste this: 
+1. Abrir la IDE de Arduino e ir a **File > Preferences** 
+2. Cerca del final encontraremos una caja de texto llamada "Additional Board Manager URLs". Allí deberemos pegar lo siguiente: 
 `http://arduino.esp8266.com/stable/package_esp8266com_index.json`
-3. Then navigate to the Board Manager by going to **Tools > Boards > Boards Manager**. There should be a couple new entries in addition to the standard Arduino boards. Look for **esp8266**. Click on that entry, then select Install.
-4. Lastly select your version of ESP8266 from the **Tools > Boards** menu
+3. Luego iremos al administrador de dispositivos en **Tools > Boards > Boards Manager**. Alli encontraremos varias opciones ademas de las estandares de Arduino. Deberemos buscar por **esp8266**. Seleccionar esa entrada e instalar.
+4. Por ultimo seleccionar la version adecuada de ESP8266 desde el menu **Tools > Boards**.
+
+[Archivos de ejemplo](./standardFirmataWiFi) de firmata Wi Fi.
+
 
 ## License
 Licensed under the MIT license.
