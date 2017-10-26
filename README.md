@@ -79,5 +79,8 @@ Otros ejemplos:
 - [Keypress](./examples/keypress)
 - [REPL](./examples/repl)
 
+## Presentación
+Los slides de la presentación del workshop pueden encontrarlos [aqui](https://docs.google.com/presentation/d/1eZ7Vt9LG6fp64gvVSviCgytMsvBdvqT8KcOFrs97kFM/edit?usp=sharing).
+
 ## License
 Licensed under the MIT license.
