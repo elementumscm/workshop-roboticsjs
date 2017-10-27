@@ -5,7 +5,7 @@ charm.pipe(process.stdout);
 
 class Nunchuk {
   constructor(
-    { joystick = true, buttons = true, accelerometer = true, freq = 100 } = {},
+    { joystick = true, buttons = true, accelerometer = true, freq = 100 } = {}
   ) {
     this.onChangeCallback = null;
     this.state = {

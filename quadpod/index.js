@@ -5,16 +5,17 @@ const cliCursor = require('cli-cursor');
 const charm = require('charm')();
 const robot = require('./robot');
 const nunchuk = require('./nunchuk');
+const EtherPort = require('etherport');
 
 clear();
-printii();
+//printii();
 cliCursor.hide();
 charm.pipe(process.stdout);
 
 // Set boards.
 const boards = new five.Boards([
-  { id: 'bot', port: '/dev/cu.NODEBOT_BETA-DevB' },  //replace with your bluetooth port id
-  { id: 'nunchuk', port: '/dev/cu.usbserial-AH01CDU1' }, //replace with your usb port id
+  { id: 'bot', port: new EtherPort(3030) },  //replace with your bluetooth port id
+  { id: 'nunchuk', port: '/dev/cu.wchusbserial1420' }, //replace with your usb port id
 ]);
 
 function log(message) {

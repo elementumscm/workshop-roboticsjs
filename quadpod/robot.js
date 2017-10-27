@@ -2,7 +2,7 @@ const temporal = require('temporal');
 
 function init(five, board) {
   const quad = {
-    status: 'sleep',
+    status: 'sleep'
   };
 
   const lift = { femur: 0 };
@@ -11,34 +11,34 @@ function init(five, board) {
   const gait = 1;
   const s = {
     front: {
-      coxa: [0 - 0 * gait, 0, 0 + 0 * gait],
-      femur: [0, 0, 0],
+      coxa: [ 90 - 30 * gait, 90, 90 + 30 * gait ],
+      femur: [ 30, 0, 50 ]
     },
 
     rear: {
-      coxa: [0 + 0 * gait, 0, 0 - 0 * gait],
-      femur: [0, 0, 0],
-    },
+      coxa: [ 90 + 30 * gait, 90, 90 - 30 * gait ],
+      femur: [ 50, 0, 30 ]
+    }
   };
 
   // Front Right Leg
-  quad.r1c = new five.Servo({ pin: 0, board });
-  quad.r1f = new five.Servo({ pin: 0, board });
+  quad.r1c = new five.Servo({ address: 0x40, controller: 'PCA9685', pin: 0, board });
+  quad.r1f = new five.Servo({ address: 0x40, controller: 'PCA9685', pin: 1, board, invert:true });
   quad.r1 = new five.Servos([quad.r1c, quad.r1f]);
 
   // Front Left Leg
-  quad.l1c = new five.Servo({ pin: 0, board });
-  quad.l1f = new five.Servo({ pin: 0, board });
+  quad.l1c = new five.Servo({ address: 0x40, controller: 'PCA9685', pin: 2, board, invert:true });
+  quad.l1f = new five.Servo({ address: 0x40, controller: 'PCA9685', pin: 3, board });
   quad.l1 = new five.Servos([quad.l1c, quad.l1f]);
 
   // Rear Right Leg
-  quad.r2c = new five.Servo({ pin: 0, board });
-  quad.r2f = new five.Servo({ pin: 0, board });
+  quad.r2c = new five.Servo({ address: 0x40, controller: 'PCA9685', pin: 4, board, invert: true });
+  quad.r2f = new five.Servo({ address: 0x40, controller: 'PCA9685', pin: 5, board, invert: true });
   quad.r2 = new five.Servos([quad.r2c, quad.r2f]);
 
   //Rear Left Leg
-  quad.l2c = new five.Servo({ pin: 0, board });
-  quad.l2f = new five.Servo({ pin: 0, board });
+  quad.l2c = new five.Servo({ address: 0x40, controller: 'PCA9685', pin: 6, board });
+  quad.l2f = new five.Servo({ address: 0x40, controller: 'PCA9685', pin: 7, board });
   quad.l2 = new five.Servos([quad.l2c, quad.l2f]);
 
   quad.coxa = new five.Servos([quad.r1c, quad.l1c, quad.r2c, quad.l2c]);
@@ -73,14 +73,14 @@ function init(five, board) {
         false,
         {
           degrees: s.front.femur[1],
-          easing: easeOut,
+          easing: easeOut
         },
         {
           degrees: s.front.femur[1],
-          easing: easeIn,
-        },
-      ],
-    ],
+          easing: easeIn
+        }
+      ]
+    ]
   };
 
   quad.walk = function quadWalk(dir) {
@@ -106,7 +106,7 @@ function init(five, board) {
           { degrees: s.front.coxa[1] },
           { degrees: s.front.coxa[b] },
           null,
-          { degrees: s.front.coxa[a] },
+          { degrees: s.front.coxa[a] }
         ],
         [
           null,
@@ -305,7 +305,7 @@ function init(five, board) {
 
     work.forEach((leg, i) => {
       work[i].offset = Math.abs(
-        quad[leg.name + 'f'].last.reqDegrees - leg.home,
+        quad[leg.name + 'f'].last.reqDegrees - leg.home
       );
     });
 

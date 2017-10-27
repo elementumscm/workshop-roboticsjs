@@ -23,5 +23,11 @@
     "keypress": "^0.2.1",
     "nodebots-interchange": "^1.1.6",
     "temporal": "^0.6.0"
+  },
+  "devDependencies": {
+    "charm": "^1.0.2",
+    "clear": "0.0.1",
+    "object-hash": "^1.2.0",
+    "printii": "^1.0.0"
   }
 }
